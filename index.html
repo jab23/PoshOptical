@@ -3,20 +3,42 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Posh Optical | Luxury Eyewear & Family Vision Care</title>
-  <meta name="description" content="Luxury eyewear, advanced lenses, eye exams, repairs, and family focused optical care in Ajax." />
+  <title>Posh Optical | Designer Eyewear & Family Eye Care in Ajax</title>
+  <meta name="description" content="Designer eyewear, eye exams, Vision-X HD lenses, contact lens fittings, repairs, and family eye care in Ajax." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <style>
+    :root{--bg:#f6f1e8;--ink:#171412;--soft:#efe7da;--panel:#ffffff;--gold:#b28a4a;--gold-soft:#d7bf92;--line:rgba(23,20,18,.10);--muted:#6d655c;--shadow:0 20px 50px rgba(23,20,18,.08);--radius:24px;--max:1200px}
+    *{box-sizing:border-box} body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--ink);background:radial-gradient(circle at top right, rgba(178,138,74,.12), transparent 26%),linear-gradient(180deg, #f7f2ea 0%, #f4eee4 100%)} img{max-width:100%;display:block} a{text-decoration:none}
+    .container{width:min(var(--max), calc(100% - 32px)); margin:0 auto}
+    .announcement-bar{background:#171412;color:#f8f2e8;text-align:center;font-size:.88rem;padding:12px 16px;letter-spacing:.03em}
+    .site-header{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);background:rgba(247,242,234,.80);border-bottom:1px solid rgba(23,20,18,.07)}
+    .nav-wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:82px}.brand img{height:52px;width:auto}.site-nav{display:flex;align-items:center;gap:24px;font-size:.96rem}.site-nav a{color:var(--ink);opacity:.82}.site-nav a.active,.site-nav a:hover{opacity:1}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 22px;border-radius:999px;background:#171412;color:#fff;font-weight:600;border:1px solid #171412}.btn-secondary{background:transparent;color:var(--ink);border-color:rgba(23,20,18,.14)}.btn-sm{min-height:44px;padding:0 18px}.nav-toggle{display:none}
+    .hero{padding:56px 0 34px}.hero-grid{display:grid;grid-template-columns:1.1fr .95fr;gap:28px;align-items:stretch}.hero-copy{padding:22px 0 10px}
+    .eyebrow{margin:0 0 16px;text-transform:uppercase;letter-spacing:.18em;font-size:.78rem;color:var(--gold);font-weight:700}
+    h1,h2,h3,h4{font-family:"Cormorant Garamond", serif;line-height:.96;margin:0;letter-spacing:-.02em} h1{font-size:clamp(3.1rem,7vw,5.5rem);max-width:10.5ch}
+    .lead{margin:20px 0 0;max-width:620px;font-size:1.03rem;line-height:1.75;color:var(--muted)} .hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin:28px 0 30px}
+    .hero-points{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;max-width:720px}.hero-points div{background:rgba(255,255,255,.72);border:1px solid rgba(23,20,18,.08);border-radius:20px;padding:16px 16px 18px;box-shadow:var(--shadow)} .hero-points strong{display:block;font-size:1.35rem;margin-bottom:6px;font-family:"Cormorant Garamond", serif}.hero-points span{display:block;font-size:.92rem;color:var(--muted);line-height:1.45}
+    .visual-board{display:grid;grid-template-columns:1.1fr .9fr;grid-template-rows:1.1fr .9fr;gap:16px;min-height:640px}.visual-card{position:relative;overflow:hidden;border-radius:28px;background:#ddd;min-height:220px;box-shadow:var(--shadow)} .visual-card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,0,.02) 0%, rgba(0,0,0,.32) 100%)} .visual-card.large{grid-row:1 / span 2} .visual-card img{width:100%;height:100%;object-fit:cover}
+    .visual-label{position:absolute;left:18px;right:18px;bottom:18px;z-index:1;color:#fff;background:rgba(23,20,18,.42);border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:14px 16px;backdrop-filter:blur(8px)} .visual-label strong{display:block;font-size:1.05rem;margin-bottom:4px}.visual-label span{display:block;font-size:.86rem;opacity:.92}
+    .section{padding:34px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:20px}.section-head h2{font-size:clamp(2.2rem,4.5vw,3.3rem)}.section-head p{max-width:480px;color:var(--muted);line-height:1.7;margin:0}
+    .offer-band{display:grid;grid-template-columns:1.1fr .9fr .9fr;gap:16px}.offer-card{background:rgba(255,255,255,.80);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)} .offer-card.primary{background:linear-gradient(135deg, #1e1a17 0%, #332920 100%);color:#fff;border-color:transparent}.offer-card h3{font-size:2rem;margin-bottom:12px}.offer-card p{margin:0;line-height:1.7;color:inherit;opacity:.9}.offer-card .mini{display:inline-block;margin-bottom:12px;font-size:.74rem;text-transform:uppercase;letter-spacing:.16em;color:var(--gold-soft);font-weight:700}.offer-card.primary .btn{margin-top:18px;background:#fff;color:#171412;border-color:#fff}
+    .services-grid{display:grid;grid-template-columns:repeat(4, minmax(0,1fr));gap:16px}.service-card{background:rgba(255,255,255,.84);border:1px solid var(--line);border-radius:26px;overflow:hidden;box-shadow:var(--shadow)} .service-card .service-image{height:220px;overflow:hidden;background:#ddd}.service-card .service-image img{width:100%;height:100%;object-fit:cover}.service-card .service-copy{padding:22px}.service-card h3{font-size:1.9rem;margin-bottom:10px}.service-card p{margin:0;color:var(--muted);line-height:1.7;font-size:.95rem}
+    .brand-strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.brand-chip{background:rgba(255,255,255,.68);border:1px solid var(--line);border-radius:18px;padding:18px;text-align:center;font-weight:600;letter-spacing:.02em;color:#2f2a25;box-shadow:var(--shadow)}
+    .split-showcase{display:grid;grid-template-columns:1fr 1fr;gap:18px}.panel{background:rgba(255,255,255,.80);border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)} .panel h3{font-size:2rem;margin-bottom:12px}.panel p{margin:0;color:var(--muted);line-height:1.75}.panel ul{margin:16px 0 0;padding:0;list-style:none;display:grid;gap:10px}.panel li{padding-left:18px;position:relative;color:#2c2925;line-height:1.55}.panel li::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--gold);position:absolute;left:0;top:.62em}
+    .cta-banner{display:flex;align-items:center;justify-content:space-between;gap:20px;background:#171412;color:#fff;border-radius:30px;padding:28px;box-shadow:var(--shadow)} .cta-banner h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:10px}.cta-banner p{margin:0;color:rgba(255,255,255,.78);line-height:1.7}.cta-actions{display:flex;flex-wrap:wrap;gap:12px}.cta-banner .btn{background:#fff;color:#171412;border-color:#fff}.cta-banner .btn-secondary{background:transparent;color:#fff;border-color:rgba(255,255,255,.18)}
+    .site-footer{padding:34px 0 48px;border-top:1px solid rgba(23,20,18,.07);margin-top:30px}.footer-grid{display:grid;grid-template-columns:1.2fr .7fr .9fr;gap:24px}.footer-logo{height:56px;width:auto;margin-bottom:14px}.site-footer h4{font-size:1.3rem;margin:0 0 12px}.site-footer p,.site-footer a{margin:0 0 10px;color:var(--muted);line-height:1.7;display:block}
+    @media (max-width:1100px){.hero-grid,.offer-band,.split-showcase{grid-template-columns:1fr}.services-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.brand-strip{grid-template-columns:repeat(2,minmax(0,1fr))}.visual-board{min-height:560px}}
+    @media (max-width:860px){.site-nav{display:none}.nav-toggle{display:block;border:1px solid var(--line);background:#fff;border-radius:12px;padding:10px 12px}.hero{padding-top:34px}.hero-points{grid-template-columns:1fr}.visual-board{grid-template-columns:1fr;grid-template-rows:repeat(3, 220px);min-height:auto}.visual-card.large{grid-row:auto}.services-grid,.footer-grid{grid-template-columns:1fr}.section-head,.cta-banner{display:block}.cta-actions{margin-top:18px}}
+  </style>
 </head>
 <body>
-  <div class="announcement-bar">Luxury eyewear. Family friendly care. Ajax based service with designer frames and advanced lenses.</div>
+  <div class="announcement-bar">Ajax optical boutique • Over 200 name brand frames • Free glasses for first time customers with a valid prescription</div>
   <header class="site-header">
     <div class="container nav-wrap">
-      <a class="brand" href="index.html">
-        <img src="assets/logo.png" alt="Posh Optical logo" />
-      </a>
+      <a class="brand" href="index.html"><img src="assets/logo.png" alt="Posh Optical logo" /></a>
       <button class="nav-toggle" aria-label="Open menu">☰</button>
       <nav class="site-nav">
         <a href="index.html" class="active">Home</a>
@@ -30,133 +52,122 @@
   </header>
 
   <main>
-    <section class="hero hero-home">
+    <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Luxury in every glance</p>
-          <h1>Designer eyewear with a warmer, more elevated optical experience.</h1>
-          <p class="lead">Posh Optical brings together premium frames, Vision X HD lenses, eye exams, repairs, and personalized styling in a setting that feels refined without losing its family friendly warmth.</p>
+          <p class="eyebrow">Designer eyewear in Ajax</p>
+          <h1>Luxury frames, expert lenses, and family eye care that feels effortless.</h1>
+          <p class="lead">Posh Optical is known for over 200 name brand frames, Vision-X HD lenses, eye exams, contact lens fittings, free in store adjustments, and a first pair free offer for new customers with a valid prescription.</p>
           <div class="hero-actions">
             <a class="btn" href="https://www.poshoptical.com/book-online" target="_blank" rel="noreferrer">Book an eye exam</a>
-            <a class="btn btn-secondary" href="services.html">Explore services</a>
+            <a class="btn btn-secondary" href="services.html">View services</a>
           </div>
-          <div class="hero-metrics">
-            <div><strong>200+</strong><span>designer frames</span></div>
-            <div><strong>5 star</strong><span>review spotlight</span></div>
-            <div><strong>11 to 7</strong><span>Mon to Sat</span></div>
+          <div class="hero-points">
+            <div><strong>200+ Frames</strong><span>Designer and everyday styles for optical and sun.</span></div>
+            <div><strong>Vision-X HD</strong><span>Premium lenses with custom options for modern wear.</span></div>
+            <div><strong>Family Friendly</strong><span>A polished store experience that still feels warm and approachable.</span></div>
           </div>
         </div>
-        <div class="hero-card luxury-panel">
-          <p class="mini-label">Featured experience</p>
-          <h2>Vision X HD Lenses</h2>
-          <p>Sharper contrast, modern coatings, premium comfort, and lens customization tailored to work, driving, and everyday wear.</p>
-          <ul class="check-list">
-            <li>Single vision and progressive options</li>
-            <li>Custom tints and premium add ons</li>
-            <li>Expert fittings and adjustments</li>
-          </ul>
+        <div class="visual-board" aria-label="Featured Posh Optical visuals">
+          <div class="visual-card large">
+            <img src="https://images.unsplash.com/photo-1577803645773-f96470509666?auto=format&fit=crop&w=1200&q=80" alt="Luxury eyewear display" />
+            <div class="visual-label"><strong>Curated frame styling</strong><span>Luxury brands, statement eyewear, and everyday prescription frames.</span></div>
+          </div>
+          <div class="visual-card">
+            <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=900&q=80" alt="Eye exam and lens consultation" />
+            <div class="visual-label"><strong>Eye exams</strong><span>Professional care with a seamless handoff into the optical.</span></div>
+          </div>
+          <div class="visual-card">
+            <img src="https://images.unsplash.com/photo-1591076482161-42ce6da69f67?auto=format&fit=crop&w=900&q=80" alt="Premium eyewear close up" />
+            <div class="visual-label"><strong>Premium lenses</strong><span>Sharper, more comfortable vision for daily wear.</span></div>
+          </div>
         </div>
-      </div>
-    </section>
-
-    <section class="section intro-band">
-      <div class="container intro-grid">
-        <div>
-          <p class="eyebrow">A more polished direction</p>
-          <h2>Luxury, without feeling cold.</h2>
-        </div>
-        <p>I used a softer luxury palette rather than pure black and gold. The site leans on obsidian, champagne gold, warm ivory, and muted sage gray so it still feels upscale, but more welcoming for families and routine eye care.</p>
       </div>
     </section>
 
     <section class="section">
-      <div class="container cards-grid three-up">
-        <article class="info-card">
-          <span class="card-kicker">01</span>
-          <h3>Premium frames</h3>
-          <p>Highlight designer lines, curated displays, and frame styling support for both everyday wear and statement eyewear.</p>
+      <div class="container offer-band">
+        <article class="offer-card primary">
+          <span class="mini">Current feature</span>
+          <h3>Free glasses for first time customers</h3>
+          <p>Bring in any optometrist prescription less than two years old and claim your first pair in store. Conditions apply.</p>
+          <a class="btn" href="contact.html">Ask about the offer</a>
         </article>
-        <article class="info-card">
-          <span class="card-kicker">02</span>
-          <h3>Clinical confidence</h3>
-          <p>Eye exams, contact lens fittings, and lens expertise are presented with more credibility and cleaner hierarchy.</p>
+        <article class="offer-card">
+          <span class="mini" style="color:#8a6a35">Specialty lenses</span>
+          <h3>Vision-X HD lenses</h3>
+          <p>Built for clearer contrast, improved comfort, and customized wear across reading, work, and driving.</p>
         </article>
-        <article class="info-card">
-          <span class="card-kicker">03</span>
-          <h3>Family friendly feel</h3>
-          <p>The darker tones are balanced by light sections and softer accents so the brand stays premium, not intimidating.</p>
+        <article class="offer-card">
+          <span class="mini" style="color:#8a6a35">In store service</span>
+          <h3>Free adjustments and repairs</h3>
+          <p>Loose screws, nose pads, alignments, cleaning, and polishing with no appointment needed for quick fixes.</p>
         </article>
       </div>
     </section>
 
-    <section class="section section-alt">
-      <div class="container split-grid">
-        <div>
-          <p class="eyebrow">Services</p>
-          <h2>Everything the current website offers, presented with stronger structure.</h2>
-          <div class="service-list">
-            <div>
-              <h3>Eye Exams</h3>
-              <p>Comprehensive eye exams with an in store optical handoff that feels seamless.</p>
-            </div>
-            <div>
-              <h3>Contact Lens Fittings</h3>
-              <p>Professional fitting and guidance for comfort, care, and daily use.</p>
-            </div>
-            <div>
-              <h3>Repairs & Adjustments</h3>
-              <p>Loose screws, nose pads, frame alignment, cleaning, and polishing.</p>
-            </div>
-            <div>
-              <h3>Protection Plan</h3>
-              <p>Coverage for Vision X HD lenses with clear terms and better presentation.</p>
-            </div>
-          </div>
-          <a class="text-link" href="services.html">View full service pages</a>
-        </div>
-        <div class="feature-stack">
-          <div class="feature-panel luxury-panel">
-            <p class="mini-label">Signature offer</p>
-            <h3>First pair free for new customers</h3>
-            <p>Promotions remain visible, but with cleaner luxury styling so value does not cheapen the brand.</p>
-          </div>
-          <div class="feature-panel luxury-panel">
-            <p class="mini-label">Retail focus</p>
-            <h3>Designer collections and smart eyewear</h3>
-            <p>Includes luxury frame categories and the current online shop emphasis like Ray Ban Meta and Oakley Meta.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section reviews-section" id="reviews">
+    <section class="section">
       <div class="container">
         <div class="section-head">
-          <div>
-            <p class="eyebrow">5 star reviews</p>
-            <h2>Review spotlight built to show only 5 star feedback.</h2>
-          </div>
-          <p class="section-note">This demo ships with review data placeholders sourced from the public review copy already visible on the current website. The code is also prepared for Google review syncing once a Places API key and Place ID are added.</p>
+          <div><p class="eyebrow">Services at a glance</p><h2>Less talking. More what people actually come for.</h2></div>
+          <p>The homepage should sell the store quickly: eye exams, premium lenses, designer frames, and practical in store service.</p>
         </div>
-        <div class="review-toolbar">
-          <span class="pill">5 star only</span>
-          <span class="pill">Newest first</span>
-          <a class="text-link" href="https://share.google/8ylrNgxwqut1meDyG" target="_blank" rel="noreferrer">Open Google reviews</a>
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-image"><img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=80" alt="Designer eyeglass frames" /></div>
+            <div class="service-copy"><h3>Designer Frames</h3><p>Browse luxury and everyday brands with frame guidance that balances style, fit, and prescription needs.</p></div>
+          </article>
+          <article class="service-card">
+            <div class="service-image"><img src="https://images.unsplash.com/photo-1584036553518-36b3f98c5c1d?auto=format&fit=crop&w=900&q=80" alt="Comprehensive eye exam" /></div>
+            <div class="service-copy"><h3>Eye Exams</h3><p>Book a comprehensive exam and move directly into frame selection and lens recommendations in one visit.</p></div>
+          </article>
+          <article class="service-card">
+            <div class="service-image"><img src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?auto=format&fit=crop&w=900&q=80" alt="Contact lens fitting" /></div>
+            <div class="service-copy"><h3>Contact Lenses</h3><p>Contact lens fittings, product guidance, and support for comfortable daily wear and reorders.</p></div>
+          </article>
+          <article class="service-card">
+            <div class="service-image"><img src="https://images.unsplash.com/photo-1516541196182-6bdb0516ed27?auto=format&fit=crop&w=900&q=80" alt="Glasses repair and adjustment" /></div>
+            <div class="service-copy"><h3>Repairs & Care</h3><p>Repairs, adjustments, nose pads, cleaning, and polishing to keep your eyewear fitting and looking right.</p></div>
+          </article>
         </div>
-        <div id="reviews-grid" class="cards-grid"></div>
       </div>
     </section>
 
     <section class="section">
-      <div class="container cta-banner">
-        <div>
-          <p class="eyebrow">Visit the store</p>
-          <h2>35 Harwood Ave S, Ajax, ON</h2>
-          <p>Monday to Saturday, 11 to 7. Sunday closed.</p>
+      <div class="container">
+        <div class="section-head">
+          <div><p class="eyebrow">Brands people recognize</p><h2>Luxury names customers already look for.</h2></div>
+          <p>The current site calls out brands including Gucci, YSL, Versace, Burberry, Prada, Dolce &amp; Gabbana, Cartier, and Tiffany.</p>
         </div>
-        <div class="cta-actions">
-          <a class="btn" href="contact.html">Contact store</a>
-          <a class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&query=35+Harwood+Ave+S+Ajax+ON+L1S+2B8" target="_blank" rel="noreferrer">Get directions</a>
+        <div class="brand-strip">
+          <div class="brand-chip">Gucci</div><div class="brand-chip">Prada</div><div class="brand-chip">Cartier</div><div class="brand-chip">Tiffany</div>
+          <div class="brand-chip">Versace</div><div class="brand-chip">Burberry</div><div class="brand-chip">YSL</div><div class="brand-chip">Dolce &amp; Gabbana</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split-showcase">
+        <div class="panel">
+          <p class="eyebrow">Why this homepage works better</p>
+          <h3>Cleaner, more visual, and easier to scan.</h3>
+          <p>Instead of long explanation blocks, the content is now anchored around the offer, the services, the brands, and the in store experience. That is enough to sell the store without turning the homepage into an essay.</p>
+          <ul><li>Shorter copy with stronger headlines</li><li>Visual cards instead of text heavy sections</li><li>Promotion placed high without looking cheap</li><li>Luxury tone that still works for families</li></ul>
+        </div>
+        <div class="panel">
+          <p class="eyebrow">Colour direction</p>
+          <h3>Not black and gold. Softer luxury.</h3>
+          <p>A family optical usually benefits from warm neutrals more than a pure black background. This version uses espresso, champagne gold, ivory, and soft stone so it still feels premium, but not too dark or intimidating.</p>
+          <ul><li>Premium without feeling nightclub dark</li><li>Better readability for older visitors</li><li>Works for both luxury and clinical trust</li><li>Easy to extend across the other pages</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta-banner">
+          <div><p class="eyebrow">Visit Posh Optical</p><h2>35 Harwood Ave S, Ajax, ON</h2><p>Open Monday to Saturday from 11 to 7. Book online, visit in store, or contact the team about current offers and eyewear services.</p></div>
+          <div class="cta-actions"><a class="btn" href="contact.html">Contact store</a><a class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&query=35+Harwood+Ave+S+Ajax+ON+L1S+2B8" target="_blank" rel="noreferrer">Get directions</a></div>
         </div>
       </div>
     </section>
@@ -164,25 +175,10 @@
 
   <footer class="site-footer">
     <div class="container footer-grid">
-      <div>
-        <img class="footer-logo" src="assets/logo.png" alt="Posh Optical logo" />
-        <p>Luxury eyewear and family vision care in Ajax.</p>
-      </div>
-      <div>
-        <h4>Explore</h4>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-      </div>
-      <div>
-        <h4>Contact</h4>
-        <a href="mailto:sales@poshoptical.com">sales@poshoptical.com</a>
-        <a href="tel:18009408007">1 800 940 8007</a>
-        <p>35 Harwood Ave S, Ajax, ON L1S 2B8</p>
-      </div>
+      <div><img class="footer-logo" src="assets/logo.png" alt="Posh Optical logo" /><p>Designer eyewear, eye exams, premium lenses, and family eye care in Ajax.</p></div>
+      <div><h4>Explore</h4><a href="about.html">About</a><a href="services.html">Services</a><a href="contact.html">Contact</a></div>
+      <div><h4>Contact</h4><a href="mailto:sales@poshoptical.com">sales@poshoptical.com</a><a href="tel:18009408007">1 800 940 8007</a><p>35 Harwood Ave S, Ajax, ON L1S 2B8</p></div>
     </div>
   </footer>
-
-  <script src="app.js"></script>
 </body>
 </html>
